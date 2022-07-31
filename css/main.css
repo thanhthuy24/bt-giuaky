@@ -1,0 +1,134 @@
+
+.flex {
+    display: flex;
+}
+
+header.flex {
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;;
+}
+
+/*phần nav đầu tiên của body*/
+
+nav {
+    background-color: #F7E2E2;
+    height: 45px;
+    color: #180A0A;
+}
+
+nav.flex div.flex ul li {
+    margin-left: 20px;
+}
+
+nav.flex div.flex ul li a:hover {
+    color: red;
+}
+
+/*phần header trong body*/
+
+header {
+    background-color:#f1e7e7;
+    font-size: 18px;
+    position:relative;
+}
+
+header > div > img {
+    width: 150px;
+    top:50%;
+    transform: translateY(-50%);
+    position:absolute;
+    left: 20px;
+}
+
+div.find > input{
+    width:500px;
+    font-size:20px;
+}
+
+.find > input{
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 10px;
+    border: 1px dotted white;
+}
+
+div.flex {
+    margin: auto;
+}
+
+ul.menu li {
+    
+    border: 1px solid beige;
+    background-color: beige;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+ul.menu li a {
+    display: block;
+    padding:10px;
+}
+
+ul.menu li a:hover {
+    background-color: darkblue;
+    color:white;
+    border-radius: 15px;
+    
+}
+
+/* phan section cuar body*/
+
+section .vmenu.flex
+{
+    margin: 0 7rem;
+    position: relative;
+}
+.citySelect
+{
+    display: none !important;
+    position: absolute;
+}
+.content:hover .citySelect 
+{
+    background-color: #fff;
+    display: block !important;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 -2px 4px #00000012;
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 400px;
+    min-width: 120px;
+    padding: 10px 0;
+}
+.city-item > a
+{
+    padding: 0 10px;
+}
+ul.vmenu
+{
+    line-height: 40px;
+    justify-content: space-between;
+}
+.city-item > a:hover
+{
+    color: red;
+}
+
+li.link
+{
+    padding: 0 20px;
+}
+section .flex.contents {
+    align-items: flex-start;
+    margin: 0 3rem;
+}
