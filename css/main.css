@@ -1,7 +1,20 @@
+:root{
+    --width:80%;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 .flex {
     display: flex;
 }
+
+body {
+    background-color: #f6f6f6;
+}
+
+/* phần dùng chung cho cả trang web*/
 
 header.flex {
     justify-content: space-between;
@@ -16,8 +29,13 @@ a {
 }
 
 body {
-    font-size: 16px;;
+    font-size: 17px;
 }
+
+div.flex {
+    margin: auto;
+}
+
 
 /*phần nav đầu tiên của body*/
 
@@ -25,6 +43,10 @@ nav {
     background-color: #F7E2E2;
     height: 45px;
     color: #180A0A;
+}
+
+nav.flex div.flex {
+    margin: auto;
 }
 
 nav.flex div.flex ul li {
@@ -35,8 +57,7 @@ nav.flex div.flex ul li a:hover {
     color: red;
 }
 
-/*phần header trong body*/
-
+/*Phần header cho market*/
 header {
     background-color:#f1e7e7;
     font-size: 18px;
@@ -62,10 +83,6 @@ div.find > input{
     border: 1px dotted white;
 }
 
-div.flex {
-    margin: auto;
-}
-
 ul.menu li {
     
     border: 1px solid beige;
@@ -86,49 +103,84 @@ ul.menu li a:hover {
     
 }
 
-/* phan section cuar body*/
+/*Phần bỏ trống 2 bên màn hình*/
+.ads div {
+    background-color: #f6f6f6;
+    color: #180A0A;
+    font-size: 2rem;
+    text-align:center;
+    padding: 10rem 0;
+    margin: 0;
+    width: calc((100% - var(--width))/2 - 2%);
+    position: fixed;
+}
 
-section .vmenu.flex
-{
-    margin: 0 7rem;
-    position: relative;
+.ads > div:first-child {
+    left: 1%;
 }
-.citySelect
-{
-    display: none !important;
-    position: absolute;
+
+.ads > div:last-child {
+    right: 1%;
 }
-.content:hover .citySelect 
-{
-    background-color: #fff;
-    display: block !important;
-    border: 1px solid #ebebeb;
-    box-shadow: 0 -2px 4px #00000012;
-    border-radius: 10px;
-    overflow: auto;
-    max-height: 400px;
-    min-width: 120px;
-    padding: 10px 0;
-}
-.city-item > a
-{
-    padding: 0 10px;
-}
-ul.vmenu
-{
-    line-height: 40px;
+
+/*phần cố định bên phải, thẻ mua hàng, link đăng ký*/
+
+/*Div giới thiệu cửa hàng tạp hóa*/
+
+.container {
+    width: var(--width);
+    margin: 0 auto;
+  }
+
+.left {
+    padding-top: 15px;
     justify-content: space-between;
 }
-.city-item > a:hover
-{
-    color: red;
+
+div.title-box div.flex {
+    margin-top: 5px;
 }
 
-li.link
+div.title-box {
+    background-color: #fff;
+    border: transparent;
+    border-radius: 10px;
+    width: 800px;
+    position: relative;
+}
+
+div.flex h1.subtitle {
+    margin: 10px 0;
+}
+
+div.subtitle {
+    font-size: 24px;
+    font-weight: 700;   
+}
+
+section div.flex img {
+    width: 200px;
+    padding:0;
+}
+
+div.store {
+    margin: 5px 0;
+    border: 1px solid #000;
+    font-size: 20px;
+    color: #000 !important;
+    margin-right: 75%;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+div.address span, div.address
 {
-    padding: 0 20px;
+    margin:10px 10px !important;
 }
-section .flex.contents {
-    align-items: flex-start;
-    margin: 0 3rem;
+
+span.button-store {
+    margin-left: auto !important;
 }
+
+/*Đơn hàng của bạn*/
+
