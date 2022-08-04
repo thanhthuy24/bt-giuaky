@@ -56,66 +56,86 @@
         <div></div>
     </aside>
 
-   <section class="container">
-    <!--giới thiệu cửa hàng-->
-        <div class= " flex left ">
-            <div class="title-box">
-                <div class="flex"> 
-                    <img src="/bt-giuaky/imgs/market5.png"/>
-                    <img src="/bt-giuaky/imgs/market2.jpg"/>
-                    <img src="/bt-giuaky/imgs/market3.jpg"/>
-                    <img src="/bt-giuaky/imgs/market4.jpg"/>
-                </div>
+    <section class="container">
+        <main class="order-page">
+            <div>
+            <!--Gồm 2 phần: Menu món và box order-->
+            <!--Phần 1: giới thiệu cửa hàng và Menu món-->
+                <div class= "left"><!--kích thước = 800px-->
 
-                <div>
-                    <h1 class="subtitle"> CIRCLE K <a href="#"><i class="fa-solid fa-heart"></i></a></h1>
-                </div>
+                    <!--1.1giới thiệu cửa hàng-->
 
-                <div class="store">
-                    <a href="#">Cửa hàng tiện lợi</a>
-                </div>
-
-                <div class="flex add">
-
-                    <div class="flex add_1">
-                        <div><i class="fa-solid fa-location-dot"></i> 0.8km</div>
-                        <div style="color:#7ed321">Đang mở cửa</div>
-                    </div>
-
-                    <div class="flex add_2">
+                    <div class="title-box">
                         <div>
-                            <a href="#"><i class="fa-solid fa-link"></i>https://foodoo.vn/circlekgovap</a>
+                            <div class="flex"> 
+                                <img src="/bt-giuaky/imgs/market5.png"/>
+                                <img src="/bt-giuaky/imgs/market2.jpg"/>
+                                <img src="/bt-giuaky/imgs/market3.jpg"/>
+                                <img src="/bt-giuaky/imgs/market4.jpg"/>
+                            </div>
+
+                            <div class="flex">
+                                <h1 class="subtitle"> CIRCLE K <a href="#"><i class="fa-solid fa-heart"></i></a></h1>
+                            </div>
+
+                            <div class="store">
+                                <a href="#">Cửa hàng tiện lợi</a>
+                            </div>
+
+                            <div>
+                                <div class="flex add">
+
+                                    <div class="flex add_1">
+                                        <div><i class="fa-solid fa-location-dot"></i> 0.8km</div>
+                                        <div style="color:#7ed321">Đang mở cửa</div>
+                                    </div>
+                
+                                    <div class="flex add_2">
+                                        <div>
+                                            <a href="#"><i class="fa-solid fa-link"></i>https://foodoo.vn/circlekgovap</a>
+                                        </div>
+                                        <div class="but">
+                                            <input type="button" value="copy link"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="address">
+                                371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP Hồ Chí Minh</div>
+                            </div>
                         </div>
-                        <div class="but">
-                            <input type="button" value="copy link"/>
+                    </div>
+
+                    <!--1.2giới thiệu menu món ăn-->
+
+                    <div  class="menu-store">
+                        <!--danh mục các món có trong cửa hàng-->
+                        <div class="menu-store-1">
+                            <div style="margin-top: 0px;">
+                                <div style="font-size: 15px;" class="categorize">
+                                    <ul>
+                                        <li><a href="#">NƯỚC SUỐI VÀ NƯỚC NGỌT</a></li>
+                                        <li><a href="#">SNACK</a></li>
+                                        <li><a href="#">SỮA</a></li>
+                                        <li><a href="#">ĐỒ DÙNG CÁ NHÂN</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--các món ăn rong từng danh mục-->
+                        <div class="menu-store-2">
+
                         </div>
                     </div>
                 </div>
+            <!--Phần 2: box để order-->
+                <div class="right"><!--kích thước = 350px-->
 
-                <div class="address">
-                      371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP Hồ Chí Minh
                 </div>
             </div>
-       
-            <!--Đơn hàng của bạn-->
-            <div class="right">
-                <div>
-                    <h1>ĐƠN HÀNG CỦA BẠN</h1>
-                </div>
-                <div class="detail">
-                    Hãy chọn món yêu thích của bạn trên menu để đặt giao hàng ngay!
-                </div>
-                <div class="flex sale">
-                    <span>Mã giảm giá:(nếu có)</span>
-                    <input type="text"/>
-                </div>
-                <div>
-                    Tổng tiền: (Tạm tính) <a href="#"><i class="fa-regular fa-circle-question"></i></a>
-                </div>
-            </div>
-        </div>
-
-        
+        </main>
    </section>
+
 </body>
 </html>
