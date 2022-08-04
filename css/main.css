@@ -208,27 +208,37 @@ div.address {
 /*Đơn hàng của bạn*/
 
 div.right {
-    width: 300px;
-    height: 186px;
+    width: 350px;
+    height: 300px;/*chỉnh lại height khi thêm đến đâu sẽ dài ra đến đó*/
     background: linear-gradient( #FBF8F1, #F7E8F6);
     border: 3px dashed #E5B0EA;
     border-radius: 15px;
-    color: #1572A1;
+    color: #398cb5;
     box-shadow: 0 2px 4px #00000012;
-    padding: 15px;
+    padding: 10px;
 }
 
 div.right h1 {
     border-bottom: 1px solid #000;
+    margin: 10px 0;
 }
-
 
 div.right > div:first-child, 
 div.right > div.detail {
     text-align: center;
 }
 
+div.right > div.detail {
+    margin: 50px;
+
+}
+
+.flex.sale {
+    margin: 5px 2px;
+
+}
 
 div.right > div:last-child {
-    margin: 0 auto;
+    margin: 10px 5px;
+    padding: 5px;
 }
