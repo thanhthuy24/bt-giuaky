@@ -216,6 +216,9 @@ div.right {
     color: #398cb5;
     box-shadow: 0 2px 4px #00000012;
     padding: 10px;
+    position: fixed;
+    left: 66%;
+   
 }
 
 div.right h1 {
