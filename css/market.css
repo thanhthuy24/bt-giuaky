@@ -262,10 +262,10 @@ div.categorize ul li
 div.menu-store-2 > div {
     width: 625px;
     background-color: #fff;
-    height: 1200px;
+    height: 1000px;
     margin-left: 20px;
     border-radius: 10px;
-
+    margin-bottom: 30px;
 }
 
 div.title-categorize h3 {
@@ -278,7 +278,7 @@ div.menu-store-2 ul {
     padding: 0;
 }
 
-div.drink {
+div.drink-food {
     padding: 16px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -289,26 +289,27 @@ div.img-width > img {
     width: 120px;
 }
 
-div.drink div:nth-child(2) > div {
+
+div.drink-food div:nth-child(2) > div {
     margin-top: 10px;
     font-weight: 500;
 }
 
-div.drink span {
+div.drink-food span {
     position: absolute;
      width:20px; 
      height: 20px; 
-     margin-left: auto;
      right: 30px;
-     top: 20px
+     top: 20px;
+     transition:all .3s;
+}
+
+div.drink-food span:hover {
+    color: red;
+    
 }
 
 div.color-drinksize {
     color: #377D71;
     margin-left: 20px;
-}
-
-div.drink span > i {
-    width: 20px;
-
 }
