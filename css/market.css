@@ -19,6 +19,7 @@
 body {
     background-color: #f6f6f6;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /* phần dùng chung cho cả trang web*/
@@ -135,8 +136,6 @@ ul.menu li a:hover {
     right: 1%;
 }
 
-/*phần cố định bên phải, thẻ mua hàng, link đăng ký*/
-
 /*phần 1.1 giới thiệu cửa hàng*/
     /*phần dùng chung*/
 
@@ -231,8 +230,9 @@ div.address {
 }
 
 .menu-store-1 {
-    width: 160px;
     height: 1200px;
+    flex-grow: 1;
+    min-width: 160px;
 }
 
 div.categorize {
@@ -312,4 +312,82 @@ div.drink-food span:hover {
 div.color-drinksize {
     color: #377D71;
     margin-left: 20px;
+}
+
+/*phần 1.2 Box order*/
+
+div.right {
+    width: 350px;
+    margin: 20px 20px;
+}
+
+div.order {
+    width: 350px;
+    height: 180px;
+}
+
+div.popup {
+    position: relative;
+    background-color: #f1e7e7;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 10px;
+}
+
+.popup::after {
+    position: absolute;
+    content:"";
+    top: 100%;
+    left: 85%;
+    border-style: solid;
+    border-width: 8px;
+    border-color: rgb(67, 67, 67) transparent transparent rgb(67, 67, 67);
+}
+
+div.popup a {
+    position: absolute;
+    font-size: 12px;
+    top: 5px;
+    right: 10px;
+}
+
+div.popup > span {
+    padding: 20px;
+    text-align: center;
+}
+
+div.box-order {
+    background-color: #f1e7e7;
+}
+
+div.box-head {
+    margin: 0 10px 0 10px;
+    border-bottom: 1px solid #000;
+}
+
+div.box-head div.group {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    display:inline-block;
+    background-color: #FEC260;
+    cursor: pointer;
+    width: 90px;
+    height: 39px;
+    margin: auto;
+    line-height: 28px;
+}
+
+div.list-view-1 {
+    padding: 16px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    border-bottom: 1px solid #000;
+}
+
+div.list-view-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
