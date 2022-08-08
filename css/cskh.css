@@ -57,7 +57,18 @@ div.greeting img {
 }
 
 div.search-box {
+    width: 750px;
+    height: 81px;
     position: absolute;
     top: calc(100% + 40px);
     left: calc(50% + 24px);
+    background-color: aqua;
+
+}
+
+div.search-box div.input {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-right: 30px;
 }
