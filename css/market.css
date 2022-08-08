@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 :root{
     --width:80%;
 }
@@ -35,6 +39,7 @@ li {
 a {
     text-decoration: none;
     color: #1C3879;
+    cursor: pointer;
 }
 
 a:hover {
@@ -240,6 +245,7 @@ div.categorize {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
+    
 }
 
 div.categorize ul {
@@ -319,6 +325,10 @@ div.color-drinksize {
 div.right {
     width: 350px;
     margin: 20px 20px;
+    top: 155px;
+    right: 10px;
+    left: 67%;
+    position: fixed;
 }
 
 div.order {

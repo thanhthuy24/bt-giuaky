@@ -1,8 +1,11 @@
-/*khi nhan vao button copy*/
-function init(){
-    let button = document.querySelectorAll(".but input");
-    for (let i = 0; i < button.length; i++)
-        button[i].addEventListener("click", function(){
-        let prefix = this.getAttribute("rel");
-  })
-}
+function init() {
+let d = new Date()
+    let m = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+    let c = document.getElementById("clock")
+    c.innerText = m
+    setInterval(function() {
+        let d = new Date()
+        let m = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+        c.innerText = m
+    }, 1000);
+  }

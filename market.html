@@ -11,7 +11,7 @@
     <script src="/bt-giuaky/js/script_market.js"></script>
 
 </head>
-<body>
+<body  onload="init()">
     <!--Nav đầu trang-->
     <nav class="flex">
         <div class="flex">
@@ -87,16 +87,14 @@
 
                                     <div class="flex add_1">
                                         <div><i class="fa-solid fa-location-dot"></i> 0.8km</div>
-                                        <div style="color:#7ed321">Đang mở cửa</div>
+                                        <div class="open_close" style="color:#7ed321">Đang mở cửa</div>
                                     </div>
                 
                                     <div class="flex add_2">
                                         <div>
                                             <a href="#"><i class="fa-solid fa-link"></i>https://foodoo.vn/circlekgovap</a>
                                         </div>
-                                        <div class="but">
-                                            <input type="button" value="copy link"/>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -115,18 +113,18 @@
                             <div style="margin-top: 0px;">
                                 <div style="font-size: 15px;" class="categorize">
                                     <ul>
-                                        <li><a href="#">NƯỚC GIẢI KHÁT</a></li>
-                                        <li><a href="#">THỨC ĂN NÓNG</a></li>
-                                        <li><a href="#">SỮA VÀ SẢN PHẨM TỪ SỮA</a></li>
-                                        <li><a href="#">KEM</a></li>
-                                        <li><a href="#">SNACKS</a></li>
+                                        <li><a href="#nuocgiaikhat">NƯỚC GIẢI KHÁT</a></li>
+                                        <li><a href="#thucannong">THỨC ĂN NÓNG</a></li>
+                                        <li><a href="#suavaspsua">SỮA VÀ SẢN PHẨM TỪ SỮA</a></li>
+                                        <li><a href="#kem">KEM</a></li>
+                                        <li><a href="#snacks">SNACKS</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <!--các món ăn rong từng danh mục-->
                         <div class="menu-store-2">
-                            <div>
+                            <div id="nuocgiaikhat">
                                 <div class="title-categorize">
                                    <h3>NƯỚC GIẢI KHÁT</h3>
                                 </div>
@@ -218,7 +216,7 @@
                                 </ul>
                             </div>
 
-                            <div>
+                            <div id="thucannong">
                                 <div class="title-categorize">
                                    <h3>THỨC ĂN NÓNG</h3>
                                 </div>
@@ -307,7 +305,7 @@
                                 </ul>
                             </div>
 
-                            <div>
+                            <div id="suavaspsua">
                                 <div class="title-categorize">
                                    <h3>SỮA VÀ SẢN PHẨM TỪ SỮA</h3>
                                 </div>
@@ -399,7 +397,7 @@
                                 </ul>
                             </div>
 
-                            <div>
+                            <div id="kem">
                                 <div class="title-categorize">
                                    <h3>KEM</h3>
                                 </div>
@@ -491,7 +489,7 @@
                                 </ul>
                             </div>
 
-                            <div>
+                            <div id="snacks">
                                 <div class="title-categorize">
                                    <h3>SNACKS</h3>
                                 </div>
