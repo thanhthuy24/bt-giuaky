@@ -189,3 +189,20 @@ div.input {
     width: 700px;
     margin-top: 8px;
 }
+
+/*phần body của trang*/
+
+.main_menu {
+    width: 930px;
+    height: 1102.6px;
+    padding: 10px;
+}
+div.breakcrumb {
+    padding: 10px 0;
+}
+
+
+div.col_1 {
+    width: 156px;
+    background-color:#1C3879;
+}
