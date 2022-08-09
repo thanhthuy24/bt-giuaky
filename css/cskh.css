@@ -146,8 +146,7 @@ div {
 }
 
 .subbanner {
-    background-image: url(/bt-giuaky/imgs/cskh/background.jpg);
-    background-color: #4d876a;
+    background: #477d65 url(/bt-giuaky/imgs/cskh/background.jpg) no-repeat center top;
     height: 210px;
     padding-top: 40px;
 }
@@ -201,6 +200,7 @@ div.input {
 
 div.breakcrumb {
     padding: 10px 0;
+    background-color: #d6dbd9;
 }
 
 div.col_1 {
@@ -208,7 +208,7 @@ div.col_1 {
 }
 
 div.col_2 {
-    width: 587px;
+    width: 685px;
 }
 
 div.menu_col_2 {
@@ -220,5 +220,28 @@ div p {
 }
 
 div.content {
-    margin-left: 10px;
+    margin-left: 30px;
+}
+
+div.item2 {
+    font-size: 20px !important;
+}
+
+div.col_3 {
+    width: 275px;
+}
+
+div.item_ques a {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+div.item_ques {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
