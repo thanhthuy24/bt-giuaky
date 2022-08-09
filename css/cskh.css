@@ -44,7 +44,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #1C3879;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
@@ -196,13 +196,29 @@ div.input {
     width: 930px;
     height: 1102.6px;
     padding: 10px;
+    display: flex;
 }
+
 div.breakcrumb {
     padding: 10px 0;
 }
 
-
 div.col_1 {
-    width: 156px;
-    background-color:#1C3879;
+    width: 170px;
+}
+
+div.col_2 {
+    width: 587px;
+}
+
+div.menu_col_2 {
+    padding: 10px 0 0 10px;
+}
+
+div p {
+    margin-top: 10px;  
+}
+
+div.content {
+    margin-left: 10px;
 }
