@@ -191,6 +191,10 @@ div.input {
 
 /*phần body của trang*/
 
+div.container {
+    background-color: #fff;
+}
+
 .main_menu {
     width: 930px;
     height: 1102.6px;
@@ -201,14 +205,23 @@ div.input {
 div.breakcrumb {
     padding: 10px 0;
     background-color: #d6dbd9;
+    margin-bottom: 10px;
 }
 
 div.col_1 {
     width: 170px;
 }
 
+div.menu_col_1 div {
+    margin: 4px;
+    padding:5px;
+}
+
 div.col_2 {
     width: 685px;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+    padding-right: 5px;
 }
 
 div.menu_col_2 {
