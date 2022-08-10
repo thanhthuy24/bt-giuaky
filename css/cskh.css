@@ -217,6 +217,30 @@ div.menu_col_1 div {
     padding:5px;
 }
 
+div.support_col_1 {
+    width: 190px;
+}
+
+div.item_menu_support {
+    position: relative;
+    padding-bottom: 5px;
+    margin: 5px 0 10px 0;
+}
+
+div.item_menu_support a {
+    margin-left: 10px;
+}
+
+div.item_menu_support::before {
+    content: " ";
+    height: 5px;
+    width: 5px;
+    background: #111;
+    left: 0;
+    top: 7px;
+    position: absolute;
+}
+
 div.col_2 {
     width: 685px;
     border-left: 1px solid #111;
@@ -234,6 +258,8 @@ div p {
 
 div.content {
     margin-left: 30px;
+    border-bottom: 1px solid rgb(189, 188, 188);
+    margin-bottom: 30px;
 }
 
 div.item2 {
