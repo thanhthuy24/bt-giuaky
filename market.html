@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/bt-giuaky/css/market.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="/bt-giuaky/js/script_market.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 </head>
 <body onload="init()">
     <!--Nav đầu trang-->
@@ -57,8 +58,8 @@
     </aside>
 
     <section class="container">
-        <main class="order-page flex">
-            <div>
+        <main class="order-page">
+            <div class="merchant_page">
                 <!--Gồm 2 phần: Menu món và box order-->
                 <!--Phần 1: giới thiệu cửa hàng và Menu món-->
                 <div class= "left"><!--kích thước = 800px-->
@@ -131,14 +132,14 @@
                                 <ul>
                                     <div class="drink-food">
                                         <div class="img-width">
-                                            <img src="/bt-giuaky/imgs/circlek/drink2.png"/>
+                                            <img id="mainImg1" src="/bt-giuaky/imgs/circlek/drink2_1.png"/>
                                         </div>
                                         <div>
                                             <div class="select">
-                                                <div>Cà phê phin sữa nóng</div>
+                                                <div>Cà phê phin nóng</div>
                                                 <div class="buttons">
-                                                    <button rel="sữa">Sữa</button>
-                                                    <button rel="đen">Đen</button>
+                                                    <input rel="_1" type="button" value="Sữa">
+                                                    <input rel="_2" type="button" value="Đen">
                                                 </div>
                                             </div>
                                             <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
@@ -151,12 +152,18 @@
 
                                     <div class="drink-food">
                                         <div class="img-width">
-                                            <img src="/bt-giuaky/imgs/circlek/drink3.png"/>
+                                            <img id="mainImg2" src="/bt-giuaky/imgs/circlek/drink3_1.png"/>
                                         </div>
                                         <div>
-                                            <div>Trà sữa thái xanh</div>
+                                            <div class="select">
+                                            <div>Trà sữa thái</div>
+                                                <div class="buttons">
+                                                    <input rel="_1" type="button" value="Xanh">
+                                                    <input rel="_2" type="button" value="Đỏ">
+                                                </div>
+                                            </div>
                                             <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
-                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 18.000</div>
                                         </div>
                                         <span >
                                             <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
@@ -165,10 +172,16 @@
 
                                     <div class="drink-food">
                                         <div class="img-width">
-                                            <img src="/bt-giuaky/imgs/circlek/drink4.png"/>
+                                            <img id="mainImg3" src="/bt-giuaky/imgs/circlek/drink4_2.png"/>
                                         </div>
                                         <div>
-                                            <div>Trà chanh</div>
+                                            <div class="select">
+                                                <div>Trà </div>
+                                                <div class="buttons">
+                                                    <input rel="_1" type="button" value="Chanh">
+                                                    <input rel="_2" type="button" value="Đào">
+                                                </div>
+                                            </div>
                                             <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
                                             <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
                                         </div>
@@ -207,7 +220,7 @@
 
                                     <div class="drink-food">
                                         <div class="img-width">
-                                            <img src="/bt-giuaky/imgs/circlek/drink6.png"/>
+                                            <img src="/bt-giuaky/imgs/circlek/drink6_1.png"/>
                                         </div>
                                         <div>
                                             <div>Cà phê phin đen đá</div>

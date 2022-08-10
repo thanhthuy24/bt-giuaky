@@ -284,3 +284,36 @@ div.item_ques {
     margin-bottom: 10px;
     padding-left: 10px;
 }
+
+#flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #326e51;
+    color: #fff;
+    width: 190px;
+    height: 33px;
+    position: fixed;
+    bottom: 0;
+    left: 85%;
+  }
+  
+  #panel {
+  border: solid 1px #c3c3c3;
+    padding: 5px;
+     width: 190px;
+     height: 400px;
+    display: none;
+    background-color: #fff;
+    color: #111;
+    position: fixed;
+    bottom: 0;
+    left: 85%;
+  }
+
+div.background, div.logo {
+    width: 100%;
+}
+
+.background img, .logo img {
+    width: 100%;
+}
