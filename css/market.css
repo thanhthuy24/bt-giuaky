@@ -291,6 +291,23 @@ div.drink-food {
     position: relative;
 }
 
+div.select {
+    display: flex;
+}
+
+/*div.select button {
+    padding: 5px;
+    background-color: antiquewhite;
+    height: 25px;
+    width: 50px;
+    line-height: 13px;
+}*/
+
+div.select > button, div.select > div {
+    margin-right: 10px;
+}
+
+
 div.img-width > img {
     width: 120px;
 }

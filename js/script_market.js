@@ -1,11 +1,14 @@
+
+
 function init() {
-let d = new Date()
-    let m = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
-    let c = document.getElementById("clock")
-    c.innerText = m
-    setInterval(function() {
-        let d = new Date()
-        let m = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
-        c.innerText = m
-    }, 1000);
-  }
+    let buttons = document.querySelectorAll(".buttons button")
+    for (let bnt of buttons){
+        bnt.addEventListener("click", function() {
+            let prefix = bnt.getAttribute("rel");
+            let name = document.querySelectorAll(".select > div:first-child")
+            for (let t of name){
+                let h = `Cà phê phin ${prefix} nóng`
+            }
+        })
+    }
+}
