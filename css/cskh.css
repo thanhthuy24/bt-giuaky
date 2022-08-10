@@ -298,10 +298,10 @@ div.item_ques {
   }
   
   #panel {
-  border: solid 1px #c3c3c3;
+    border: solid 1px #d0d0d0;
     padding: 5px;
-     width: 190px;
-     height: 400px;
+    width: 190px;
+    height: 400px;
     display: none;
     background-color: #fff;
     color: #111;
@@ -317,3 +317,14 @@ div.background, div.logo {
 .background img, .logo img {
     width: 100%;
 }
+
+div.background {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+ 
+.logo img {
+    border-radius: 50%;
+    width: 60px;
+}
+
