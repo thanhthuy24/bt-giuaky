@@ -91,7 +91,7 @@
                     <div class="contact">
                         <div>
                             <div class="sdt">
-                                <a href="#" style="color:white; font-size: 28px;"><i class="fa-regular fa-comment-dots"></i></a>
+                                <a href="#chat" style="color:white; font-size: 28px;"><i class="fa-regular fa-comment-dots"></i></a>
                                 <span style="color:white;">
                                     Chat
                                 </span>
@@ -285,7 +285,13 @@
                     <h3 style="margin-left: 10px"><strong>Foodoo</strong></h3>
                 </div>
                 <div class="input-chat">
-                    <textarea placeholder="Nhắn tin cho Foodoo để chúng tôi giải đáp thắt mắc cho bạn."></textarea>
+                    <form>
+                        <textarea required placeholder="Nhắn tin cho Foodoo để chúng tôi giải đáp thắt mắc cho bạn." ></textarea>
+                        <div class="send-button">
+                            <button>Gửi</button>
+                        </div>
+                    </form>
+                    
                 </div>
 
                 <div>
@@ -293,13 +299,10 @@
                         <img style="width: 50px;" src="/bt-giuaky/imgs/cskh/mess.jpg"/>
                         <p style="font-size: 10px; margin: 7px; ">Tin nhắn đã gửi cho Foodoo.vn và câu trả lời của họ sẽ hiển thị trong Messenger của bạn. </p>
                     </div>
-                    <div class="send-button">
-                        <button>Gửi</button>
-                    </div>
+                   
                 </div>
             </div>
-
-            <div id="flip">
+            <div id="flip" >
                 <span style="margin-right: 10px;">Chat với chúng tôi</span>
                 <i class="fa-solid fa-angle-down"></i>
             </div>
@@ -310,7 +313,7 @@
     <div class="buble">
         <div class="buble-position">
             <div id="id1">
-                <img title="Gửi tin nhắn ngay" src="/bt-giuaky/imgs/cskh/messenger.jpg"/>
+               <img title="Gửi tin nhắn ngay" src="/bt-giuaky/imgs/cskh/messenger.jpg"/>
             </div>
             <div id="id2">
                 <img title="Liên hệ ngay" src="/bt-giuaky/imgs/cskh/call.jpg"/>

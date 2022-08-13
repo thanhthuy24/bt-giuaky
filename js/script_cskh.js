@@ -17,12 +17,14 @@ function init(){
         });
     });
     
-    
     $(document).ready(function(){
       $("div.buble-position").click(function(){
         $("div img").animate({right: '0px'});
       });
     });
 
+    
+
 }
+
 
