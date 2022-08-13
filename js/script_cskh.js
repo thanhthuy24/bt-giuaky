@@ -5,11 +5,11 @@ function init(){
     });
   });
 
-  $(document).ready(function(){
+  /*$(document).ready(function(){
     $("div.send-button button").click(function(){
         alert("Tin nhắn đã gửi thành công! Hãy check Messenger mỗi ngày nhé!");  
       });
-    });
+    });*/
 
     $(document).ready(function(){
       $("div.buble-position").mouseenter(function(){

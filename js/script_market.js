@@ -1,5 +1,3 @@
-let ids= ["mainImg1", "mainImg2", "mainImg3", "mainImg4"]
-
 function init() {
    let m = document.getElementById("mainImg1");
     let buttons = document.querySelectorAll(".bnt1 > input")
@@ -50,6 +48,11 @@ function init() {
         })
     })
 
+    $(document).ready(function(){
+        $("span.add-to-cart").click(function(){
+            $(".confirm-box").show();
+        })
+    })
 
 }
 

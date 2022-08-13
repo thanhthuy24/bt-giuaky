@@ -308,11 +308,15 @@ div.select > button, div.select > div {
     margin-right: 10px;
 }
 
-
 div.img-width > img {
-    width: 120px;
+    width: 120px; 
+    transition: width 1s;
 }
 
+
+div.img-width img:hover {
+    width: 170px;
+}
 
 div.drink-food div:nth-child(2) > div {
     margin-top: 10px;
@@ -321,11 +325,11 @@ div.drink-food div:nth-child(2) > div {
 
 div.drink-food span {
     position: absolute;
-     width:20px; 
+     width: 20px; 
      height: 20px; 
      right: 30px;
      top: 20px;
-     transition:all .3s;
+     /*transition:all .3s;*/
 }
 
 div.drink-food span:hover {
@@ -371,7 +375,7 @@ div.popup {
     left: 85%;
     border-style: solid;
     border-width: 8px;
-    border-color: rgb(67, 67, 67) transparent transparent rgb(67, 67, 67);
+    border-color: #576F72 transparent transparent #576F72;
 }
 
 div.popup a {
@@ -424,6 +428,7 @@ div.list-view-1 {
     text-align: center;
     margin: 0 10px 0 10px;
     border-bottom: 1px solid #000;
+    color: rgb(151, 151, 151);
 }
 
 div.list-view-2 {
@@ -434,4 +439,22 @@ div.list-view-2 {
 
 .cmt {
     color: red;
+}
+
+/*thêm vào giỏ hàng*/
+
+span.add-to-cart {
+    font-size: 27px;
+}
+
+/*chọn món, chọn size*/
+
+.confirm-box {
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    background-color: #ffe5b4;
+    overflow: hidden;
+    z-index: 200;
 }
