@@ -356,7 +356,8 @@ div.order {
 
 div.popup {
     position: relative;
-    background-color: #f1e7e7;
+    background-color: #576F72;
+    color: #fff;
     border-radius: 10px;
     height: 40px;
     margin-bottom: 10px;
@@ -387,6 +388,7 @@ div.popup > span {
 
 div.box-order {
     background-color: #f1e7e7;
+    border-radius: 10px;;
 }
 
 div.box-head {
@@ -399,12 +401,22 @@ div.box-head div.group {
     border-radius: 10px;
     padding: 5px;
     display:inline-block;
-    background-color: #FCE2DB;
+    background-color: #1F4690;
     cursor: pointer;
-    width: 90px;
+    width: 70px;
     height: 39px;
     margin: auto;
     line-height: 28px;
+    text-align: center;
+}
+
+div.box-head div.group:hover {
+    background-color: #FFE5B4;
+    
+}
+
+div.box-head div.group a:hover {
+    color: #111 !important;
 }
 
 div.list-view-1 {
@@ -420,3 +432,6 @@ div.list-view-2 {
     padding: 10px;
 }
 
+.cmt {
+    color: red;
+}
