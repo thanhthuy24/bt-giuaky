@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/bt-giuaky/js/script_cskh.js"></script>
+
 </head>
-<body>
+<body onload="init()">
     <!--Phần header-->
     <nav class="flex">
         <div class="flex">
@@ -281,15 +282,45 @@
                 </div>
                 <div class="logo flex">
                     <img src="/bt-giuaky/imgs/short icon.png"/>
-                    <h4 style="margin-left: 10px"><strong>Foodoo</strong></h4>
+                    <h3 style="margin-left: 10px"><strong>Foodoo</strong></h3>
                 </div>
+                <div class="input-chat">
+                    <textarea placeholder="Nhắn tin cho Foodoo để chúng tôi giải đáp thắt mắc cho bạn."></textarea>
+                </div>
+
                 <div>
-                    <input style="width: 175px; height: 120px; margin-top: 10px;" type="text" placeholder="Nhắn tin cho Foodoo để chúng tôi giải đáp thắt mắc cho bạn."/>
+                    <div class="flex">
+                        <img style="width: 50px;" src="/bt-giuaky/imgs/cskh/mess.jpg"/>
+                        <p style="font-size: 10px; margin: 7px; ">Tin nhắn đã gửi cho Foodoo.vn và câu trả lời của họ sẽ hiển thị trong Messenger của bạn. </p>
+                    </div>
+                    <div class="send-button">
+                        <button>Gửi</button>
+                    </div>
                 </div>
             </div>
+
             <div id="flip">
-            <span style="margin-right: 10px;">Chat với chúng tôi</span>
-            <i class="fa-solid fa-angle-down"></i>
+                <span style="margin-right: 10px;">Chat với chúng tôi</span>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buble">
+        <div class="buble-position">
+            <div id="id1">
+                <img title="Gửi tin nhắn ngay" src="/bt-giuaky/imgs/cskh/messenger.jpg"/>
+            </div>
+            <div id="id2">
+                <img title="Liên hệ ngay" src="/bt-giuaky/imgs/cskh/call.jpg"/>
+            </div>
+            <div id="id3">
+                <img title="Điền form ngay" src="/bt-giuaky/imgs/cskh/form.jpg"/>
+            </div>
+            <div id="id4">
+                <img title="Xem địa chỉ ngay" src="/bt-giuaky/imgs/cskh/map.jpg"/>
+            </div>
         </div>
     </div>
 </body>

@@ -290,24 +290,24 @@ div.item_ques {
     text-align: center;
     background-color: #326e51;
     color: #fff;
-    width: 190px;
+    width: 230px;
     height: 33px;
     position: fixed;
     bottom: 0;
-    left: 85%;
+    left: 80%;
   }
   
   #panel {
-    border: solid 1px #d0d0d0;
+    border: solid 1px #111;
     padding: 5px;
-    width: 190px;
-    height: 400px;
+    width: 230px;
+    height: 410px;
     display: none;
-    background-color: #fff;
+    background-color: #FCF8E8;
     color: #111;
     position: fixed;
     bottom: 0;
-    left: 85%;
+    left: 80%;
   }
 
 div.background, div.logo {
@@ -328,3 +328,45 @@ div.background {
     width: 60px;
 }
 
+.input-chat textarea {
+    width: 210px;
+    height: 120px;
+    margin: 15px 0 0 5px;
+    padding: 5px;
+    resize: none;
+    overflow: hidden;
+}
+
+div.send-button {
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+div.buble div {
+    margin: 8px;
+    padding: 4px;
+
+}
+
+/*div.buble div:hover {
+    right: 1%;
+}*/
+
+div.buble img {
+    width: 54px;
+    position: relative;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+div.buble-position {
+    position: fixed;
+    right: -3%;
+    top: 40%;
+}
+
+div.buble-position img:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    
+}
