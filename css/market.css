@@ -355,7 +355,7 @@ div.right {
 
 div.order {
     width: 350px;
-    height: 180px;
+    height: 300px;
 }
 
 div.popup {
@@ -445,16 +445,59 @@ div.list-view-2 {
 
 span.add-to-cart {
     font-size: 27px;
+   
+}
+
+span.add-to-cart i {
+    cursor:pointer;
 }
 
 /*chọn món, chọn size*/
 
-.confirm-box {
+div.confirm-box {
     width: 500px;
+    height:500px;
     position: fixed;
-    top: 50%;
-    left: 40%;
-    background-color: #ffe5b4;
-    overflow: hidden;
+    top: 30%;
+    left: 30%;
+    background-color: #81590e !important;
+    overflow:scroll;
+    overflow-x: hidden;
     z-index: 200;
+}
+
+.body-confirm-box {
+    background-color: #c7d0e5;
+}
+
+.body-confirm-box div > i {
+    margin: 0 5px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.body-confirm-box div > img {
+    width: 185px;
+    padding: 10px;
+    margin-left: 30%;
+}
+
+div.choose-size {
+    background-color: #377D71 !important;
+    border-radius: 15px 15px 0 0;
+}
+
+div.choose-size div:nth-child(even) {
+    background-color: #b9b4af !important;
+}
+
+div.name-product div {
+    padding: 13px;
+    font-size: 21px !important;
+    text-align: center;
+}
+
+div.size div {
+    padding: 13px;
+    font-size: 19px !important;
 }
