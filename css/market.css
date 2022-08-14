@@ -466,8 +466,9 @@ div.confirm-box {
     z-index: 200;
 }
 
+
 .body-confirm-box {
-    background-color: #c7d0e5;
+    background-color: #FCF8E8;
 }
 
 .body-confirm-box div > i {
@@ -483,12 +484,12 @@ div.confirm-box {
 }
 
 div.choose-size {
-    background-color: #377D71 !important;
+    background-color: #F5F5F5 !important;
     border-radius: 15px 15px 0 0;
 }
 
-div.choose-size div:nth-child(even) {
-    background-color: #b9b4af !important;
+div.choose-size > div:nth-child(even) {
+    background-color: #E6C4C0 !important;
 }
 
 div.name-product div {
@@ -497,7 +498,68 @@ div.name-product div {
     text-align: center;
 }
 
+div.number {
+    height: 50px;
+}
+
+div.number > div:first-child {
+    line-height: 50px;
+    margin-left: 2px;
+}
+
+div.number > div:last-child{
+    display: flex;
+    margin: 1px 5px;
+    padding: 5px;
+    margin-left: 20%;
+}
+
+div.number > div:last-child div > input {
+    line-height: 32px;
+    width: 30px;
+    font-size: 26px;
+    border: none; 
+    background-color: #E6C4C0;
+}
+
+div.number > div:last-child div > i {
+    line-height: 26px;
+    font-size: 26px;
+}
+
+div.size {
+    height: 50px;
+}
+
 div.size div {
+    line-height: 50px;
+}
+
+div.size > div:first-child {
+    line-height: 50px;
+    margin-left: 2px;
+}
+
+div.size1 div {
+    margin: 0 15px;
+    background-color: #000f96;
+    width: 37px;
+    height: 37px;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 37px;
+}
+
+/*div.size1 > div {
+    background-color: #1F4690;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/*div.size div {
     padding: 13px;
     font-size: 19px !important;
-}
+}*/
