@@ -456,12 +456,12 @@ span.add-to-cart i {
 
 div.confirm-box {
     width: 500px;
-    height:500px;
+    height:700px;
     position: fixed;
-    top: 30%;
+    top: 20%;
     left: 30%;
-    background-color: #81590e !important;
-    overflow:scroll;
+    /*background-color: #81590e !important;*/
+    overflow:hidden;
     overflow-x: hidden;
     z-index: 200;
 }
@@ -475,6 +475,7 @@ div.confirm-box {
     margin: 0 5px;
     padding: 6px;
     cursor: pointer;
+
 }
 
 .body-confirm-box div > img {
@@ -489,7 +490,7 @@ div.choose-size {
 }
 
 div.choose-size > div:nth-child(even) {
-    background-color: #E6C4C0 !important;
+    background-color: #DFDFDE !important;
 }
 
 div.name-product div {
@@ -519,7 +520,7 @@ div.number > div:last-child div > input {
     width: 30px;
     font-size: 26px;
     border: none; 
-    background-color: #E6C4C0;
+    background-color: #DFDFDE;
 }
 
 div.number > div:last-child div > i {
@@ -543,7 +544,7 @@ div.size > div:first-child {
 div.size1 div {
     margin: 0 15px;
     background-color: #000f96;
-    width: 37px;
+    width: 44px;
     height: 37px;
     border-radius: 15px;
     color: #fff;
@@ -551,15 +552,54 @@ div.size1 div {
     line-height: 37px;
 }
 
-/*div.size1 > div {
-    background-color: #1F4690;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    color: #fff;
+div.size2 > div:first-child {
+    line-height: 70px;
+    margin-left: 5px;
 }
 
-/*div.size div {
-    padding: 13px;
-    font-size: 19px !important;
-}*/
+div.size2-box {
+    width: 421px;
+}
+
+div.size2-box-1 {
+    height: 29px;
+    /*line-height: 35px;*/
+    margin: 0 8%;
+}
+
+div.size2-box-1 div {
+    margin: 6px 35px;
+    padding: 5px;
+    background-color: cornsilk;
+    border-radius: 15px;
+    width: 54px;
+    height: 31px;
+    line-height: 22px;
+
+}
+
+div.size2-box-2 {
+    height: 35px;
+    line-height: 35px;
+    margin: 0 24%;
+}
+
+div.size2-box-2 div, div.size2-box-3 div {
+    margin: 6px 35px;
+    padding: 5px;
+    background-color: cornsilk;
+    border-radius: 15px;
+    width: 54px;
+    height: 31px;
+    line-height: 22px;
+
+}
+
+div.size3 > div:first-child {
+    line-height: 57px;
+    line-height: 21px;
+}
+
+div.size2-box-3 div {
+    margin-left: 18%;
+}
