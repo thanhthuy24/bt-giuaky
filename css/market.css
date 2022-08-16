@@ -455,16 +455,19 @@ span.add-to-cart i {
 /*chọn món, chọn size*/
 .page-confirm {
     width: 550px;
+    height: 500px;
     background-color: #f3b443;
     position: fixed;
     top: 18%;
     left: 30%;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     z-index: 200;
 }
 
 .background-confirm {
     width: 550px;
+    position: relative;
 }
 
 div.arrow-left i {
@@ -547,4 +550,49 @@ div.box-selection > div:nth-child(even){
     padding: 5px;
     border: 1px solid #111;
     border-radius: 15px;
+}
+
+.selection-suga > div:hover {
+    background-color: #1F4690;
+    color: #fff;
+    cursor: pointer;
+}
+
+.afterClick {
+    background-color: #1F4690 !important;
+    color: #fff !important;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.foot-page-confirm {
+    width: 550px;
+    height: 42px;
+}
+
+.background-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    width: 550px;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background-color: #FFFDDE;
+    color: #000;
+}
+
+.background-footer > div:first-child {
+    margin: 9px 7px;
+}
+
+.background-footer > div:last-child{
+    background-color: #f3b443;
+    border-radius: 15px 0 0 15px;
+    padding: 7px;
+    margin-right: 2%;
+}
+
+div.sum {
+    cursor: pointer;
 }

@@ -54,5 +54,30 @@ function init() {
         })
     })
 
+    $(document).ready(function(){
+        $("#1, #2, #3, #4, #5, #6, #7, #8, #9, #10, #11, #12, #13, #14, #15").click(function(){
+            $("div.page-confirm").show();
+        })
+    })
+
+    $(document).ready(function(){
+        $("#16, #17, #18, #19, #20, #21, #22, #23, #24, #25, #26, #27, #28, #29, #30").click(function(){
+            $("div.page-confirm").show();
+        })
+    })
+
+    $(document).ready(function(){
+        $("#arrow").click(function(){
+            $("div.page-confirm").hide();
+        })
+    })
+
+    $(document).ready(function(){
+        $("div.selection-suga div").click(function(){
+            $("div.selection-suga div").addClass(".afterClick");
+        })
+    })
+
+
 }
 
