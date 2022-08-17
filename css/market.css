@@ -535,7 +535,7 @@ div.box-selection > div:nth-child(even){
     font-size: 27px;
 }
 
-.selection-suga, .selection-ice {
+.selection-suga, .selection-ice, .selection-size-1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -545,7 +545,11 @@ div.box-selection > div:nth-child(even){
     padding: 10px 15px;
 }
 
-.selection-suga > div, .selection-ice > div {
+.selection-size-1 > div{
+    padding: 7px 11px !important;
+}
+
+.selection-suga > div, .selection-ice > div, .selection-size-1 > div {
     margin: 5px 10px;
     padding: 5px;
     border: 1px solid #111;
@@ -553,7 +557,8 @@ div.box-selection > div:nth-child(even){
 }
 
 .selection-suga > div:hover,
- .selection-ice > div:hover {
+ .selection-ice > div:hover,
+ .selection-size-1 > div:hover {
     background-color: #1F4690;
     color: #fff;
     cursor: pointer;
@@ -594,7 +599,7 @@ div.box-selection > div:nth-child(even){
     margin-right: 2%;
 }
 
-div.sum {
+div.payment {
     cursor: pointer;
 }
 

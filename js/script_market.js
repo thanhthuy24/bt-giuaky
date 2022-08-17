@@ -1,4 +1,4 @@
-let rand = ['1', '2', '3','4','5','6', '7', '8','9','10','11', '12', '13','14','15']
+let names = ['Cà phê phin nóng', 'Trà sữa thái']
 
 function init() {
    let m = document.getElementById("mainImg1");
@@ -76,6 +76,11 @@ function init() {
             $(this).addClass("afterClick");
         })
 
+        $("div.selection-size-1 div").click(function(){
+            $("div.selection-size-1 div").removeClass("afterClick")
+            $(this).addClass("afterClick");
+        })
+
         /*chọn mỗi giỏ hàng, đổi ảnh đại diện sản phẩm đó*/
 
         $(".add-to-cart > i").click(function(){
@@ -126,6 +131,13 @@ function init() {
             }
          });
 
-    })
+         /*Thay đổi tên sản phẩm*/
+
+        $("span.add-to-cart").click(function(){
+            $("#title-name").replaceWith(`h`);
+        }
+           
+        });
+
 }
 
