@@ -1,12 +1,13 @@
 let names = ['Cà phê phin nóng', 'Trà sữa thái']
 
 function init() {
-   let m = document.getElementById("mainImg1");
+    let m = document.getElementById("mainImg1");
     let buttons = document.querySelectorAll(".bnt1 > input")
     for (let bnt of buttons){
         bnt.addEventListener("click", function() {
             let prefix = bnt.getAttribute("rel");
                 m.src=`/bt-giuaky/imgs/circlek/drink2${prefix}.png`
+
         })
     }
 
@@ -83,61 +84,48 @@ function init() {
 
         /*chọn mỗi giỏ hàng, đổi ảnh đại diện sản phẩm đó*/
 
-        $(".add-to-cart > i").click(function(){
-            let m = document.getElementById("mainImg1");
-            let buttons = document.querySelectorAll(".bnt1 > input")
-            for (let bnt of buttons){
-                bnt.addEventListener("click", function() {
-                    let prefix = bnt.getAttribute("rel");
-                        m.src=`/bt-giuaky/imgs/circlek/drink2${prefix}.png`
-                        $("#title-img").attr("src", m.src);
-                })
-            }
-         });
+        $("#1").click(function(){
 
-         $(".add-to-cart > i").click(function(){
-            let m1 = document.getElementById("mainImg2");
-            let buttons1 = document.querySelectorAll(".bnt2 > input")
-            for (let bnt1 of buttons1){
-                bnt1.addEventListener("click", function() {
-                    let prefix1 = bnt1.getAttribute("rel");
-                        m1.src=`/bt-giuaky/imgs/circlek/drink3${prefix1}.png`
-                        $("#title-img").attr("src", m1.src);
-                })
-            }
-         });
+            $("#title-img").attr("src", m.src);
+        })
 
-         $(".add-to-cart > i").click(function(){
-            let m2 = document.getElementById("mainImg3");
-            let buttons2 = document.querySelectorAll(".bnt3 > input")
-            for (let bnt2 of buttons2){
-                bnt2.addEventListener("click", function() {
-                    let prefix2 = bnt2.getAttribute("rel");
-                        m2.src=`/bt-giuaky/imgs/circlek/drink4${prefix2}.png`
-                        $("#title-img").attr("src", m2.src);
-                })
-            }
-         });
+        $("#2").click(function(){
+            $("#title-img").attr("src", m1.src);
+        })
 
-         $(".add-to-cart > i").click(function(){
-            let m3 = document.getElementById("mainImg4");
-    let buttons3 = document.querySelectorAll(".bnt4 > input")
-    for (let bnt3 of buttons3){
-        bnt3.addEventListener("click", function() {
-            let prefix3 = bnt3.getAttribute("rel");
-                m3.src=`/bt-giuaky/imgs/circlek/drink6${prefix3}.png`
-                        $("#title-img").attr("src", m3.src);
-                })
-            }
-         });
+        $("#3").click(function(){
+            $("#title-img").attr("src", m2.src);
+        })
 
-         /*Thay đổi tên sản phẩm*/
+        $("#4").click(function(){
+            $("#title-img").attr("src", m3.src);
+        })
 
-        $("span.add-to-cart").click(function(){
-            $("#title-name").replaceWith(`h`);
-        }
-           
-        });
+        /*chọn mỗi giỏ hàng, đổi tên sản phẩm*/
 
+        $("#1").click(function(){
+            let t = document.getElementById("name1");
+            $("#title-name").innerHTML="Cà phê phin nóng";
+        })
+
+        $("#2").click(function(){
+            $("#title-name").hide();
+            let t1 = document.getElementById("name2");
+            $("#title-name").innerHTML="Trà sữa thái";
+            $("#title-name").show();
+        })
+
+        $("#3").click(function(){
+            $("#title-name").hide();
+            let t2 = document.getElementById("name3");
+            $("#title-name").replaceWith(t2);
+        })
+
+        $("#4").click(function(){
+            let t3 = document.getElementById("name4");
+            $("#title-name").replaceWith(t3);
+        })
+
+
+    })
 }
-
