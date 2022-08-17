@@ -535,7 +535,7 @@ div.box-selection > div:nth-child(even){
     font-size: 27px;
 }
 
-.selection-suga {
+.selection-suga, .selection-ice {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -545,14 +545,15 @@ div.box-selection > div:nth-child(even){
     padding: 10px 15px;
 }
 
-.selection-suga > div {
+.selection-suga > div, .selection-ice > div {
     margin: 5px 10px;
     padding: 5px;
     border: 1px solid #111;
     border-radius: 15px;
 }
 
-.selection-suga > div:hover {
+.selection-suga > div:hover,
+ .selection-ice > div:hover {
     background-color: #1F4690;
     color: #fff;
     cursor: pointer;
@@ -596,3 +597,5 @@ div.box-selection > div:nth-child(even){
 div.sum {
     cursor: pointer;
 }
+
+
