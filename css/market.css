@@ -577,9 +577,15 @@ div.box-selection > div:nth-child(even){
     cursor: pointer;
 }
 
+.selection {
+    position: relative;
+}
+
 .foot-page-confirm {
     width: 550px;
     height: 42px;
+    position: fixed;
+    bottom: 10%;
 }
 
 .background-footer {

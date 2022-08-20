@@ -203,6 +203,19 @@ function init() {
         $("#findfood").on("click", "a", function(){
             $("#foodname").val($(this).text());
         })
+        
+        /*Click thêm vào giỏ hàng*/
 
+        $("div.payment").click(function(){
+            $(".page-confirm").hide("slow", function(){
+                alert("Đã thêm vào giỏ hàng!");
+                $("div.list-view-1").hide();
+
+                $("div.list-view").innerHTML=`
+                $("#title-img").attr("src", m.src);
+                $("#title-name").text("Cà phê phin nóng");
+                `
+            });
+        })
     })
 }
