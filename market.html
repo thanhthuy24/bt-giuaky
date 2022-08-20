@@ -38,8 +38,11 @@
 
         <div class="flex"> 
             <div class="find">
-                <input type="text" placeholder="Nhập tên quán ăn,.. "/>
+                <input id="foodname" type="text" placeholder="Nhập tên món cần tìm,.. "/>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <ul id="findfood">
+
+                </ul>
             </div>
         </div>
 
@@ -143,8 +146,8 @@
                                                     <input rel="_2" type="button" value="Đen">
                                                 </div>
                                             </div>
-                                            <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
-                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                            <div id="M" class="color-drinksize" style="width:120px">Size M: 15.000</div>
+                                            <div id="L" class="color-drinksize" style="width:120px">Size L: 20.000</div>
                                         </div>
                                         <span class="add-to-cart">
                                             <i id="1" title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
@@ -214,10 +217,10 @@
 
                                     <div class="drink-food">
                                         <div class="img-width">
-                                            <img src="/bt-giuaky/imgs/circlek/drink1.jpg"/>
+                                            <img id="mainImg5" src="/bt-giuaky/imgs/circlek/drink1.png"/>
                                         </div>
                                         <div>
-                                            <div>Froster</div>
+                                            <div id="name5">Espresso</div>
                                             <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
                                             <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
                                         </div>
@@ -226,9 +229,9 @@
                                         </span>
                                     </div>
 
-                                    <div class="drink-food">
+                                    <div class="drink-food" >
                                         <div class="img-width">
-                                            <img src="/bt-giuaky/imgs/circlek/drink7.png"/>
+                                            <img id="mainImg6" src="/bt-giuaky/imgs/circlek/drink7.png"/>
                                         </div>
                                         <div>
                                             <div>Milo</div>
@@ -645,8 +648,8 @@
                                 </div>
                                 <div class="background-selection-suga">
                                     <div class="selection-size-1">
-                                        <div>M</div>
-                                        <div>L</div>
+                                        <div id="sizeM">M</div>
+                                        <div id="sizeL">L</div>
                                         
                                     </div>
                                 </div>
@@ -680,7 +683,7 @@
                             <div class="foot-page-confirm">
                                 <div class="background-footer">
                                     <div class="sum">
-                                       <span style="font-weight: bold;" >15.000VND</span>
+                                       <span id="sum" style="font-weight: bold;" >15.000VND</span>
                                     </div>
                                     <div>
                                         <div class="payment">

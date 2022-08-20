@@ -1,4 +1,6 @@
-let names = ['Cà phê phin nóng', 'Trà sữa thái']
+let names = ['Cà phê phin nóng', 'Trà sữa thái', `Trà`, `Cà phê phin đá`, `Espresso`, `Milo đá`, `Milo hộp`,
+`Mì trộn xúc xích trứng chiên`, `Bánh bao trứng cút`, `Mì trộn Indomie`, `Bánh giò`, `DimSum`, `Bánh mì ốp la`
+]
 
 function init() {
     let m = document.getElementById("mainImg1");
@@ -38,7 +40,25 @@ function init() {
         })
     }
 
+    let m4 = document.getElementById("mainImg5");
+    let buttons5 = document.querySelectorAll(".bnt6 > input")
+    for (let bnt6 of buttons5){
+        bnt5.addEventListener("click", function() {
+            m4.src=`/bt-giuaky/imgs/circlek/drink1.png`
+        })
+    }
+
+    let m5 = document.getElementById("mainImg6");
+    let buttons6 = document.querySelectorAll(".bnt7 > input")
+    for (let bnt7 of buttons6){
+        bnt7.addEventListener("click", function() {
+            m5.src=`/bt-giuaky/imgs/circlek/drink7.png`
+        })
+    }
+
     $(document).ready(function(){
+        $(".page-confirm").hide();
+
         $("#cmt").click(function(){
             alert("Đã thêm vào cửa hảng yêu thích của bạn!")
             $("#cmt").addClass("cmt")
@@ -85,7 +105,6 @@ function init() {
         /*chọn mỗi giỏ hàng, đổi ảnh đại diện sản phẩm đó*/
 
         $("#1").click(function(){
-
             $("#title-img").attr("src", m.src);
         })
 
@@ -101,31 +120,89 @@ function init() {
             $("#title-img").attr("src", m3.src);
         })
 
+        $("#5").click(function(){
+            $("#title-img").attr("src", m4.src);
+        })
+
+        $("#6").click(function(){
+            $("#title-img").attr("src", m5.src);
+        })
+
         /*chọn mỗi giỏ hàng, đổi tên sản phẩm*/
 
         $("#1").click(function(){
-            let t = document.getElementById("name1");
-            $("#title-name").innerHTML="Cà phê phin nóng";
+            $("#title-name").text("Cà phê phin nóng");
         })
 
         $("#2").click(function(){
-            $("#title-name").hide();
-            let t1 = document.getElementById("name2");
-            $("#title-name").innerHTML="Trà sữa thái";
-            $("#title-name").show();
+            $("#title-name").text("Trà sữa thái");
+           
         })
 
         $("#3").click(function(){
-            $("#title-name").hide();
-            let t2 = document.getElementById("name3");
-            $("#title-name").replaceWith(t2);
+            $("#title-name").text("Trà");
         })
 
         $("#4").click(function(){
-            let t3 = document.getElementById("name4");
-            $("#title-name").replaceWith(t3);
+            $("#title-name").text("Cà phê phin đá");
         })
 
+        $("#5").click(function(){
+            $("#title-name").text("Espresso");
+        })
+
+        $("#6").click(function(){
+            $("#title-name").text("Milo");
+        })
+
+        /*Tính giá tiền*/
+
+        $("#1, #3, #5").click(function(){
+            $("#sizeM").click(function(){
+                $("#sum").text("15.000VND")
+            })
+            $("#sizeL").click(function(){
+                $("#sum").text("20.000VND")
+            })
+        })
+
+        $("#2, #4").click(function(){
+            $("#sizeM").click(function(){
+                $("#sum").text("15.000VND")
+            })
+            $("#sizeL").click(function(){
+                $("#sum").text("18.000VND")
+            })
+        })
+
+        $("#6").click(function(){
+            $("#sizeM").click(function(){
+                $("#sum").text("17.000VND")
+            })
+            $("#sizeL").click(function(){
+                $("#sum").text("20.000VND")
+            })
+        })
+
+        /*Gợi ý tìm đồ ăn, nước uống*/
+
+        $("#foodname").keyup(function(){
+            let txt = $(this).val().toLowerCase();
+
+            let h = '';
+            for(let n of names)
+                if(n.toLowerCase().indexOf(txt) >= 0){
+                    h += `
+                    <li><a href="#">${n}</a></li>`;
+            }
+
+            if (h !== ''){}
+            $("#findfood").html(h);
+        })
+
+        $("#findfood").on("click", "a", function(){
+            $("#foodname").val($(this).text());
+        })
 
     })
 }

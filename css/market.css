@@ -496,6 +496,12 @@ div.name-product h3, label {
     height: 24px;
 }
 
+.decorate-title {
+    text-align: center;
+    line-height: 44px;
+    height: 24px;
+}
+
 div.box-selection > div:nth-child(even){
     background: rgba(8, 0, 64, 0.04);
 }
@@ -603,4 +609,19 @@ div.payment {
     cursor: pointer;
 }
 
+/*Tìm món ăn*/
 
+#findfood{
+    background-color: #fff;
+    margin: 0;
+    position:absolute;
+    z-index: 100;
+    color:rgba(8, 0, 64, 0.04);
+    width:500px;
+    border-radius: 10px;
+}
+
+#findfood > li {
+    display: block;
+    padding: 5px;
+}
