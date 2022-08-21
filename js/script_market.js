@@ -56,6 +56,17 @@ function init() {
         })
     }
 
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 21) {
+        greeting = "Đang mở cửa";
+    } else if (time < 22) {
+        greeting = "Sắp đóng cửa";
+    } else {
+        greeting = "Đã đóng cửa";
+    }
+    document.getElementById("hour").innerHTML = greeting;
+
     $(document).ready(function(){
         $(".page-confirm").hide();
 
@@ -209,13 +220,15 @@ function init() {
         $("div.payment").click(function(){
             $(".page-confirm").hide("slow", function(){
                 alert("Đã thêm vào giỏ hàng!");
-                $("div.list-view-1").hide();
-
-                $("div.list-view").innerHTML=`
-                $("#title-img").attr("src", m.src);
-                $("#title-name").text("Cà phê phin nóng");
-                `
             });
         })
+
+        /*Click danh mục ẩn hiện*/
+
+        $(".menu-store-1").hide();
+
+        $("#icon-cate").click(function(){
+            $("div.menu-store-1").slideToggle("slow");
+          });
     })
 }

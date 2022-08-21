@@ -3,6 +3,20 @@ function init(){
     $("#flip").click(function(){
       $("#panel").slideToggle("slow");
     });
+
+    $("div.buble-position").mouseenter(function(){
+      $("div img").animate({right: '30px'})
+      });
+
+      $("div.buble-position").click(function(){
+        $("div img").animate({right: '0px'});
+      });
+
+      $("#id1, .sdt").click(function(){
+          $("#panel").show();
+      })
+
+      
   });
 
   /*$(document).ready(function(){
@@ -10,21 +24,6 @@ function init(){
         alert("Tin nhắn đã gửi thành công! Hãy check Messenger mỗi ngày nhé!");  
       });
     });*/
-
-    $(document).ready(function(){
-      $("div.buble-position").mouseenter(function(){
-        $("div img").animate({right: '30px'})
-        });
-    });
-    
-    $(document).ready(function(){
-      $("div.buble-position").click(function(){
-        $("div img").animate({right: '0px'});
-      });
-    });
-
-    
-
 }
 
 

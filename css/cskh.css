@@ -285,6 +285,8 @@ div.item_ques {
     padding-left: 10px;
 }
 
+/*Phần chat*/
+
 #flip {
     padding: 5px;
     text-align: center;
@@ -369,4 +371,78 @@ div.buble-position img:hover {
     cursor: pointer;
     box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
     
+}
+
+/*Phần footer*/
+footer 
+{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: var(--bg) ;
+}
+
+.info span:hover
+{
+    color: #fa9e1b;
+}
+.copyright
+{  
+    text-align: center;
+    display: block;
+    margin-top: 35px;
+    color: #e8a0bf;
+    font-weight: 700;
+}
+.copyright a
+{  
+    color: rgb(201, 102, 148);;
+}
+ul 
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.social img
+{
+    width: 30px;
+    margin-right: 3em;
+}
+img.logo
+{
+    width: 10em;
+}
+.infoimg img
+{
+   display: block;
+   max-width: 100%;
+   width: 20px;
+   margin-right: 10px;
+}
+.info
+{
+    display: flex;
+    align-items: center;   
+    margin-bottom: 10px;    
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px; 
+    margin-right: -4px;
+    justify-content: space-between;
+}
+a.download
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    font-size: 0;
+    height: 35px;
+    width: 20px;
+
 }

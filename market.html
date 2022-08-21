@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="/bt-giuaky/js/script_market.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+    <link
+      href="css/mobilemarket.css"
+      rel="stylesheet"
+      media="screen and (max-width:500px)"
+    />
+
 </head>
 <body onload="init()">
     <!--Nav đầu trang-->
@@ -92,7 +97,7 @@
 
                                     <div class="flex add_1">
                                         <div><i class="fa-solid fa-location-dot"></i> 0.8km</div>
-                                        <div class="open_close" style="color:#7ed321">Đang mở cửa</div>
+                                        <div id="hour" class="open_close" style="color:#7ed321">Đang mở cửa</div>
                                     </div>
                 
                                     <div class="flex add_2">
@@ -113,6 +118,10 @@
                     <!--1.2giới thiệu menu món ăn-->
 
                     <div  class="menu-store">
+                         <!--icon danh mục-->
+                        <div id="icon-cate">
+                            <i class="fa-solid fa-align-justify"></i>
+                        </div>
                         <!--danh mục các món có trong cửa hàng-->
                         <div class="menu-store-1" style="position:relative;">
                             <div style="margin-top: 0px;">
@@ -726,6 +735,7 @@
                                         <div class="list-view">
                                             <!--Chỗ thêm món ăn-->
                                             <div class="list-view-1">Hãy chọn món yêu thích của bạn trên menu để đặt giao hàng ngay!</div>
+                                            
                                         </div>
                                         <div class="list-view">
                                             <div class="list-view-2">
@@ -748,9 +758,10 @@
                     </div>
                 </div>
             </div>
+
+            
+
         </main>
    </section>
-
-   <!--Phần footer-->
 </body>
 </html>
